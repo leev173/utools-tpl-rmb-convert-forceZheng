@@ -2,9 +2,10 @@ import Nzh from 'nzh'
 
 const getDigitConvertList = (numStr) => {
   const isQian = numStr.includes(',')
+  console.log("numStr:", numStr, "isQian:", isQian)
   if (isQian) numStr = numStr.replace(/,/g, '')
   const list = [{
-    title: Nzh.cn.toMoney(numStr, { outSymbol: false }),
+    title: Nzh.cn.toMoney(numStr, { outSymbol: false, forceZheng: true }),
     description: '复制 - 大写人民币'
   }]
   if (!isQian && numStr.split('.')[0].length > 3) {
@@ -41,7 +42,7 @@ window.exports = {
     args: {
       enter: (action) => {
         window.utools.hideMainWindow()
-        const result = Nzh.cn.toMoney(action.payload.replace(/,/g, ''), { outSymbol: false })
+        const result = Nzh.cn.toMoney(action.payload.replace(/,/g, ''), { outSymbol: false, forceZheng: true })
         window.utools.copyText(result)
         window.utools.showNotification('"' + result + '" 已复制')
         window.utools.outPlugin()

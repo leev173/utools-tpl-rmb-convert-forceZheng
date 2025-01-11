@@ -3,7 +3,7 @@
     "build": "webpack"
   },
   "dependencies": {
-    "nzh": "^1.0.5"
+    "nzh": "^1.0.14"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
