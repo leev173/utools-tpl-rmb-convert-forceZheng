@@ -6,6 +6,13 @@
 
 所以修改官方转大写人民币插件，做到1.0”或者“0.1“等小数返回的是“壹元整”和“壹角整”
 
+# 功能截图
+
+![image](https://github.com/user-attachments/assets/908d6c9f-c705-4e8d-be66-35c3cacccf25)
+![image](https://github.com/user-attachments/assets/3512d2a0-64ba-4953-a90c-be0d2f3c9efd)
+![image](https://github.com/user-attachments/assets/562ca652-9fe3-4c13-b795-875637777012)
+
+
 # 使用
 
 离线包安装  
